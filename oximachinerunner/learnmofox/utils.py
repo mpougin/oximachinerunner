@@ -6,13 +6,8 @@ import warnings
 import numpy as np
 from scipy.stats import zscore
 from sklearn.calibration import _CalibratedClassifier
+from sklearn.ensemble._voting import _fit_single_estimator as _parallel_fit_estimator
 from sklearn.preprocessing import LabelBinarizer
-
-# the naming of this function was changed in 5e443b3
-try:
-    from sklearn.ensemble.voting import _parallel_fit_estimator
-except ImportError:
-    from sklearn.ensemble.voting import _fit_single_estimator as _parallel_fit_estimator
 
 
 class VotingClassifier:  # pylint:disable=too-many-instance-attributes
