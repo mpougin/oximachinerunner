@@ -8,7 +8,7 @@ import hashlib
 import json
 import os
 import pickle
-import urllib
+from urllib import request
 from collections.abc import Iterable
 from functools import partial
 from pathlib import Path
@@ -72,7 +72,7 @@ def download_model(url: str, destination: Union[Path, str], md5: str):
             basedir = Path(destination).parent
             if not os.path.exists(basedir):
                 os.makedirs(basedir)
-            urllib.request.urlretrieve(url, destination, cbk_for_urlretrieve)
+            request.urlretrieve(url, destination, cbk_for_urlretrieve)
             this_file_md5 = md5sum(destination)
             if this_file_md5 == md5:
                 print("\nDownload {} file successfully.".format(destination))
