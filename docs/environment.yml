@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.7
+  - python>3.7
   - pip
   - pip:
       - oximachine_featurizer>=0.2.2
