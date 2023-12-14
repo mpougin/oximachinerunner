@@ -26,6 +26,8 @@ classifiers = [
 ]
 requires-python = '>=3.8'
 dependencies = [
+    'setuptools',
+    'matminer',
     'oximachine_featurizer>=0.4.0',
     'xgboost~=1.4',
 ]

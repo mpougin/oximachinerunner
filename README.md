@@ -6,31 +6,10 @@
 [![codecov](https://codecov.io/gh/kjappelbaum/pyepal/branch/master/graph/badge.svg?token=BL2CF4HQ06)](https://codecov.io/gh/kjappelbaum/oximachinerunner)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/oximachinerunner)
 
-## Installation
+## Description
 
-On macOS you need to run `brew install libomp` first to enable multithreading for the `XGBoost` library.
+This is a forked branch of oximachinerunner for [aiida-lsmo workflow](https://github.com/mpougin/aiida-lsmo.git). Please find the source code at https://github.com/kjappelbaum/oximachinerunner.git. 
 
-Ideally, you install everything in a clean environment, e.g., using conda
-
-```bash
-conda create -n test_oximachine_runner python=3.7 -y
-```
-
-Then activate with `conda activate test_oximachine_runner`.
-
-### Latest stable release
-
-```bash
-pip install oximachinerunner
-```
-
-Note that the installation requires significant (>500 MB) storage space since the ensembles use k-nearest neighbors models.
-
-### Development version
-
-```bash
-pip install git+https://github.com/kjappelbaum/oximachinerunner.git
-```
 
 ## Usage
 
